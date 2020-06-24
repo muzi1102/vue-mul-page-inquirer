@@ -117,7 +117,7 @@ function resolve(dir) {
 
 
 
-exports.entries = function (PAGE_NAME) {
+exports.entries = function (PAGE_NAME="*") {
     var entryFiles = glob.sync(PAGE_PATH + `/${PAGE_NAME}/*.js`);
     console.log(PAGE_PATH + `/${PAGE_NAME}/*.js`);
     var map = {};
